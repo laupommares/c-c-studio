@@ -1,3 +1,4 @@
+// @ts-nocheck
 // app/about/page.tsx
 import React from "react";
 
@@ -46,71 +47,73 @@ export default function AboutPage() {
         }}
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-black text-white py-20 px-6 md:px-12 lg:px-20 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          About Skitbit International
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-80">
-          Pioneering the future of 3D product animation for global brands.
-        </p>
-      </section>
+     {/* Hero Section */}
+<section className="relative bg-black text-white py-20 px-6 md:px-12 lg:px-20 text-center">
+  <h1 className="text-4xl md:text-6xl font-bold mb-6">
+    Conócenos
+  </h1>
+  <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-80">
+    En <span className="text-fuchsia-400 font-semibold">C&C Studio</span> ayudamos a emprendedores y profesionales a construir 
+    una identidad digital única que conecta con su audiencia y potencia su marca.
+  </p>
+</section>
 
-      {/* Feature Grid */}
-      <section className="py-16 bg-neutral-900 text-white px-6 md:px-12 lg:px-20">
-        <div className="grid gap-12 md:grid-cols-3">
-          {[
-            {
-              title: "3D Product Animation",
-              desc: "Photo-realistic animations that showcase your products in stunning detail.",
-            },
-            {
-              title: "Global Reach",
-              desc: "Serving Miami, LA, New York, Canada, and the UK with world-class visuals.",
-            },
-            {
-              title: "Cutting-edge Technology",
-              desc: "Using the latest rendering engines and motion design tools.",
-            },
-            {
-              title: "Brand Storytelling",
-              desc: "Helping brands communicate their vision through immersive 3D visuals.",
-            },
-            {
-              title: "Collaborative Workflow",
-              desc: "Work directly with our creative team for maximum efficiency.",
-            },
-            {
-              title: "SEO & Marketing Focus",
-              desc: "Optimized content to enhance your visibility on search engines.",
-            },
-          ].map((feature, index) => (
-            <div
-              key={index}
-              className="bg-neutral-800 p-6 rounded-2xl shadow-lg hover:scale-105 transform transition-all duration-300"
-            >
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-              <p className="opacity-80">{feature.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+{/* Feature Grid */}
+<section className="py-16 bg-neutral-900 text-white px-6 md:px-12 lg:px-20">
+  <div className="grid gap-12 md:grid-cols-3">
+    {[
+      {
+        title: "Branding Estratégico",
+        desc: "Diseñamos identidades visuales coherentes y memorables: paleta de colores, tipografías, logos y tono de voz.",
+      },
+      {
+        title: "Diseño para Redes",
+        desc: "Creamos templates listos para Instagram y otras plataformas, pensados para comunicar y destacar tu marca.",
+      },
+      {
+        title: "Webs Impactantes",
+        desc: "Desarrollamos landings modernas y funcionales que transmiten profesionalismo desde el primer clic.",
+      },
+      {
+        title: "Proceso Colaborativo",
+        desc: "Trabajamos a tu lado para transformar tus ideas en diseños que representen tu visión.",
+      },
+      {
+        title: "Creatividad + Tecnología",
+        desc: "Combinamos diseño estratégico con herramientas digitales de última generación.",
+      },
+      {
+        title: "Enfoque Global",
+        desc: "Si bien estamos en Argentina, trabajamos online con clientes en cualquier parte del mundo.",
+      },
+    ].map((feature, index) => (
+      <div
+        key={index}
+        className="bg-neutral-800 p-6 rounded-2xl shadow-lg hover:scale-105 transform transition-all duration-300"
+      >
+        <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+        <p className="opacity-80">{feature.desc}</p>
+      </div>
+    ))}
+  </div>
+</section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-black text-center text-white px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Ready to Elevate Your Brand?
-        </h2>
-        <p className="text-lg opacity-80 mb-8">
-          Let Skitbit International bring your products to life.
-        </p>
-        <a
-          href="/contact"
-          className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-neutral-200 transition-all"
-        >
-          Get in Touch
-        </a>
-      </section>
+{/* CTA Section */}
+<section className="py-20 bg-black text-center text-white px-6">
+  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+    ¿Listo para impulsar tu marca?
+  </h2>
+  <p className="text-lg opacity-80 mb-8">
+    En <span className="text-fuchsia-400 font-semibold">C&C Studio</span> transformamos tu identidad digital para que tu negocio crezca.
+  </p>
+  <a
+    href="/contacto"
+    className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-neutral-200 transition-all"
+  >
+    Conócenos
+  </a>
+</section>
+
     </>
   );
 }

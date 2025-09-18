@@ -19,7 +19,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 px-4 pt-4">
       <div className="container mx-auto">
-        <div className="flex h-16 items-center justify-between px-6 py-3 liquid-glass-header rounded-lg">
+        <div className="flex h-16 items-center justify-between px-6 py-3 liquid-glass-header rounded-full">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-1.5">
             <Image
@@ -55,7 +55,7 @@ export function SiteHeader() {
           <div className="hidden md:flex">
             <Button
               asChild
-              className="bg-lime-400 text-black font-medium rounded-lg px-6 py-2.5
+              className="bg-lime-400 text-black font-medium rounded-full px-6 py-2.5
                          hover:bg-lime-300 hover:shadow-md hover:scale-[1.02]
                          transition-all"
             >

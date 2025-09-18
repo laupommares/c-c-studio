@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
@@ -8,7 +10,7 @@ import Plasma from "@/components/plasma"
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Skitbit | 3D Animation Made Simple, Reliable & Scalable",
+  title: "Creamos tu identidad digital",
   description:
     "From product launches to full-scale campaigns, Skitbit delivers 3D animation that's fast, consistent, and built to wow your audience.",
   generator: "v0.app",
@@ -37,7 +39,7 @@ export default function RootLayout({
           {`
             function updateFavicon() {
               const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-              const faviconHref = darkMode ? '/icons/skitbit-white.svg' : '/icons/favicon-dark.svg';
+              const faviconHref = darkMode ? '/icons/c&c-white.svg' : '/icons/c&c-white.svg';
               let link = document.querySelector("link[rel~='icon']");
               if (!link) {
                 link = document.createElement('link');

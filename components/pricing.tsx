@@ -129,7 +129,7 @@ export function Pricing() {
               className="rounded-full px-5 text-neutral-900 hover:brightness-95"
               style={{ backgroundColor: "#f2f2f2" }}
             >
-              <Link href="https://wa.link/rc25na" target="_blank">
+              <Link href="wa.link/kl8uxh" target="_blank">
                 Contactanos ahora
               </Link>
             </Button>

@@ -120,8 +120,8 @@ interface ActivityItem {
 const defaultContent: ContentData = {
   hero: {
     title: "HIGH-IMPACT 3D ANIMATION FOR BRANDS",
-    subtitle: "skitbit",
-    buttonText: "Chat With Us",
+    subtitle: "Creativity & Code",
+    buttonText: "Chat",
   },
   features: {
     title: "What makes us the best studio for you.",
