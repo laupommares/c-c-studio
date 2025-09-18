@@ -17,17 +17,17 @@ export function SiteHeader() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 px-4 pt-4">
+    <header className="sticky top-0 z-50 px-8 lg:px-16 pt-4">
       <div className="container mx-auto">
         <div className="flex h-16 items-center justify-between px-6 py-3 liquid-glass-header rounded-full">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-1.5">
             <Image
-              src="/icons/c&c-white.svg"
+              src="/icons/C&C.svg"
               alt="Skitbit logo"
-              width={64}
-              height={64}
-              className="w-16"
+              width={54}
+              height={54}
+              className="w-12"
             />
             <Image
               src="/icons/logo-white.svg"
