@@ -24,19 +24,29 @@ export function Hero() {
             <span className="block">DIGITAL</span>
           </h1>
           <div className="mt-6">{buttonNew}</div>
-        </div>
-      </div>
+          {/* Franja por encima de todo */}
+          <div className="relative w-full overflow-hidden mt-16">
+            <div className="flex animate-marquee">
+              <Image
+                src="/images/franja2.svg"
+                alt="Franja promocional"
+                width={2000}
+                height={300}
+                className="w-full max-w-none scale-75"
+                priority
+              />
+              <Image
+                src="/images/franja2.svg"
+                alt="Franja promocional repetida"
+                width={2000}
+                height={300}
+                className="w-full max-w-none scale-75"
+                priority
+              />
+            </div>
+          </div>
 
-      {/* Franja por encima de todo */}
-      <div className="container absolute inset-0 flex justify-center items-center z-50 pointer-events-none top-48">
-        <Image
-          src="/images/franja.svg"
-          alt="Franja promocional"
-          width={2000}
-          height={300}
-          className="w-full max-w-none rotate-[-60deg]"
-          priority
-        />
+        </div>
       </div>
     </section>
   )

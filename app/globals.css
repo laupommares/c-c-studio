@@ -246,3 +246,17 @@ a[href*="v0.dev"] *,
   pointer-events: none !important;
   opacity: 0 !important;
 }
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;              /* doble ancho porque tenemos dos franjas */
+  animation: marquee s linear infinite;
+}

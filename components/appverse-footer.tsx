@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client"
 
 import { useEffect, useState } from "react"
@@ -15,7 +16,7 @@ interface FooterContent {
 
 const defaultContent: FooterContent = {
   tagline: "Experience 3D animation like never before. We craft cinematic visuals for brands and products.",
-  copyright: "© 2025 — Skitbit International Uk",
+  copyright: "© 2025 — Creativity & Code AR",
 }
 
 export function AppverseFooter() {
@@ -107,8 +108,8 @@ export function AppverseFooter() {
             {/* Brand */}
             <div className="space-y-3">
               <div className="flex items-center gap-1.5">
-                <Image src="/icons/skitbit-white.svg" alt="Skitbit logo" width={24} height={24} className="h-6 w-6" />
-                <span className="text-xl font-semibold text-lime-300">Skitbit</span>
+                <Image src="/icons/C&C.svg" alt="Skitbit logo" width={32} height={32} className="h-8 w-8" />
+                <span className="text-lg font-semibold text-lime-300">Creativity & Code</span>
               </div>
               <p className="max-w-sm text-sm text-neutral-400">{content.tagline}</p>
             </div>
@@ -118,7 +119,7 @@ export function AppverseFooter() {
               <div>
                 <h5 className="mb-2 text-xs font-semibold uppercase tracking-widest text-neutral-400">Navigation</h5>
                 <ul className="space-y-2 text-sm text-neutral-300">
-                  {["Home", "Features", "Testimonials", "Pricing", "Blog", "Download"].map((item) => (
+                  {["Home", "Precios", "Conocenos", "Preguntas frecuentes"].map((item) => (
                     <li key={item}>
                       <Link href={`#${item.toLowerCase()}`} className="hover:text-lime-300">
                         {item}
@@ -130,19 +131,7 @@ export function AppverseFooter() {
               <div>
                 <h5 className="mb-2 text-xs font-semibold uppercase tracking-widest text-neutral-400">Social media</h5>
                 <ul className="space-y-2 text-sm text-neutral-300">
-                  <li className="flex items-center gap-2">
-                    <Twitter className="h-4 w-4 text-neutral-400" />
-                    <a
-                      href="https://twitter.com/theskitbit"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-lime-300"
-                      aria-label="Follow skitbit on Twitter"
-                    >
-                      X/Twitter
-                    </a>
-                  </li>
-                  <li className="flex items-center gap-2">
+                 {/*  <li className="flex items-center gap-2">
                     <Youtube className="h-4 w-4 text-neutral-400" />
                     <a
                       href="https://www.youtube.com/@skitbitinternational"
@@ -153,7 +142,7 @@ export function AppverseFooter() {
                     >
                       YouTube
                     </a>
-                  </li>
+                  </li> */}
                   <li className="flex items-center gap-2">
                     <Instagram className="h-4 w-4 text-neutral-400" />
                     <a
@@ -186,14 +175,6 @@ export function AppverseFooter() {
           {/* Bottom bar */}
           <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-neutral-500 sm:flex-row">
             <p>{content.copyright}</p>
-            <div className="flex items-center gap-6">
-              <Link href="/revisions" className="hover:text-lime-300">
-                Revision Policy
-              </Link>
-              <Link href="/t&c" className="hover:text-lime-300">
-                Terms & Conditions
-              </Link>
-            </div>
           </div>
         </div>
       </footer>

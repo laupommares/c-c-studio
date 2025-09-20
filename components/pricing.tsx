@@ -32,10 +32,10 @@ const PRICES: Record<Currency, { startup: string; pro: string; premium: string; 
     save: "Save Flat ₹1,500/-",
   },
   USD: {
-    startup: "$299",
+    startup: "$90.000",
     pro: "$699",
     premium: "$2,049",
-    save: "Save $20",
+    /* save: "Save $20", */
   },
 }
 
@@ -115,7 +115,7 @@ export function Pricing() {
             className="mx-auto mb-4 inline-flex items-center rounded-full px-3 py-1 text-xs font-medium"
             style={{ backgroundColor: "rgba(198,255,58,0.12)", color: ACCENT }}
           >
-            Nuestros PRECIOS Y PACKS
+            ¡Encontrá el servicio que necesitas!
           </div>
           <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl" itemProp="name">
             Nuestros packs
@@ -158,7 +158,7 @@ export function Pricing() {
                 <div className="text-xl font-bold tracking-tight" itemProp="price">
                   {PRICES[currency].startup}
                 </div>
-                <span className="pb-0.5 text-[11px] text-neutral-400">per video</span>
+                {/* <span className="pb-0.5 text-[11px] text-neutral-400">per video</span> */}
                 <meta itemProp="priceCurrency" content={currency} />
               </div>
               <div className="flex gap-2">
@@ -188,11 +188,10 @@ export function Pricing() {
             <CardContent className="pt-0">
               <ul className="grid gap-2" itemProp="description">
                 {[
-                  "Logo básico.",
-                  "Paleta de colores + tipografía.",
+                  "Brand Kit",
                   "Diseño de tarjetas personales.",
-                  "6 posts editables en Canva.",
-                  "Mini landing con contacto."
+                  "Feed inicial (8 posts + 4 historias).",
+                  "6 posts editables en Canva."
                 ].map((f, i) => (
                   <FeatureItem key={i} text={f} />
                 ))}
