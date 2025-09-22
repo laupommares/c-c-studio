@@ -2,9 +2,11 @@
 
 import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
+import { AboutSection } from "@/about-section"
 import { Pricing } from "@/components/pricing"
 import { AppverseFooter } from "@/components/appverse-footer"
 import Script from "next/script"
+import AboutPage from "./About/page"
 
 // ✅ Force static generation for low TTFB
 export const dynamic = "force-static"
@@ -83,6 +85,7 @@ export default function Page() {
       <main className="min-h-[100dvh] text-white">
         <SiteHeader />
         <Hero />
+        <AboutPage /> 
         <Pricing />
         <AppverseFooter />
       </main>

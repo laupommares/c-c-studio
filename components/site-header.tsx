@@ -6,13 +6,13 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import Image from "next/image"
-import { Menu, Briefcase, Tag, HelpCircle, FileText, Info } from "lucide-react"
+import { Menu, House, Package, HelpCircle, FileText, Handshake } from "lucide-react"
 
 export function SiteHeader() {
   const links = [
-    { href: "/", label: "Home", icon: Briefcase },
-    { href: "#pricing", label: "Precios", icon: Tag },
-    { href: "About", label: "Conocenos", icon: Info },
+    { href: "/", label: "Home", icon: House },
+    { href: "#pricing", label: "Packs", icon: Package },
+    { href: "About", label: "Conocenos", icon: Handshake },
     { href: "faq", label: "Preguntas frecuentes", icon: HelpCircle },
   ]
 
@@ -24,7 +24,7 @@ export function SiteHeader() {
           <Link href="/" className="flex items-center gap-1.5">
             <Image
               src="/icons/C&C.svg"
-              alt="Skitbit logo"
+              alt="Logo Creativity & Code"
               width={54}
               height={54}
               className="w-12"
@@ -59,7 +59,7 @@ export function SiteHeader() {
                          hover:bg-lime-300 hover:shadow-md hover:scale-[1.02]
                          transition-all"
             >
-              <Link href="#contact">Chat</Link>
+              <Link href="https://wa.link/2xfv5f">Chat</Link>
             </Button>
           </div>
 
@@ -83,13 +83,19 @@ export function SiteHeader() {
                 {/* Brand Header */}
                 <div className="flex items-center gap-1.5 px-4 py-4 border-b border-gray-800">
                   <Image
-                    src="/icons/skitbit-white.svg"
-                    alt="Skitbit logo"
+                    src="/icons/C&C.svg"
+                    alt="Logo Creativity & Code"
                     width={24}
                     height={24}
                     className="h-6 w-6"
                   />
-                  <span className="font-semibold tracking-wide text-white text-lg">Skitbit</span>
+                  <Image
+                    src="/icons/logo-white.svg"
+                    alt="Skitbit logo"
+                    width={160}
+                    height={42}
+                    className="w-40"
+                  />
                 </div>
 
                 {/* Nav Links */}
@@ -116,7 +122,7 @@ export function SiteHeader() {
                                hover:bg-lime-300 hover:shadow-md hover:scale-[1.02]
                                transition-all"
                   >
-                    <Link href="https://wa.link/65mf3i">Get a Quote</Link>
+                    <Link href="https://wa.link/2xfv5f">Chat</Link>
                   </Button>
                 </div>
               </SheetContent>
