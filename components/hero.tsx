@@ -15,8 +15,8 @@ export function Hero() {
     <section className="relative isolate overflow-hidden">
       {/* Contenido del hero */}
       <div className="container relative z-10 mx-auto px-8 lg:px-16">
-        <div className="flex flex-col justify-center py-14 sm:py-16 mb-16">
-          <h1 className="mt-3 text-4xl font-extrabold -tracking-tighter sm:text-5xl md:text-8xl">
+        <div className="flex flex-col justify-center py-14 sm:py-16">
+          <h1 className="text-4xl font-extrabold -tracking-tighter sm:text-5xl md:text-[5rem]">
             <span className="block">CREAMOS</span>
             <span className="block text-lime-300 drop-shadow-[0_0_20px_rgba(132,204,22,0.35)]">
               TU IDENTIDAD
@@ -25,22 +25,22 @@ export function Hero() {
           </h1>
           <div className="mt-6">{buttonNew}</div>
           {/* Franja por encima de todo */}
-          <div className="relative w-full overflow-hidden mt-16">
+          <div className="relative w-full overflow-hidden mt-8">
             <div className="flex animate-marquee">
               <Image
-                src="/images/franja2.svg"
+                src="/images/franja.svg"
                 alt="Franja promocional"
-                width={2000}
-                height={300}
-                className="w-full max-w-none scale-75"
+                width={4000}
+                height={600}
+                className="max-w-none"
                 priority
               />
               <Image
-                src="/images/franja2.svg"
+                src="/images/franja.svg"
                 alt="Franja promocional repetida"
-                width={2000}
-                height={300}
-                className="w-full max-w-none scale-75"
+                width={4000}
+                height={600}
+                className="max-w-none"
                 priority
               />
             </div>

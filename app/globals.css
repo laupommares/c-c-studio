@@ -247,16 +247,12 @@ a[href*="v0.dev"] *,
   opacity: 0 !important;
 }
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* mueve exactamente la mitad, que es la primera copia */
 }
 
 .animate-marquee {
   display: flex;
-  width: 200%;              /* doble ancho porque tenemos dos franjas */
-  animation: marquee s linear infinite;
+  width: 200%;       /* porque hay 2 franjas */
+  animation: marquee 16s linear infinite;
 }
