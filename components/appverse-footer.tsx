@@ -7,14 +7,14 @@ import { Instagram, MessageCircle } from "lucide-react"
 
 export function AppverseFooter() {
   return (
-    <footer className="text-white border-t border-white/10 pb-20 md:pb-10">
+    <footer className="text-white border-t border-white/10">
       <div className="container mx-auto px-4 py-10">
         <div className="grid gap-8 md:grid-cols-[1.2fr_1fr_1fr]">
           
           {/* Brand */}
           <div className="space-y-3">
             <div className="flex items-center gap-1.5">
-              <Image src="/icons/C&C.svg" alt="Skitbit logo" width={32} height={32} className="h-8 w-8" />
+              <Image src="/icons/C&C.svg" alt="Logo Creativity & Code" width={32} height={32} className="h-8 w-8" />
               <span className="text-lg font-semibold text-lime-300">Creativity & Code</span>
             </div>
             <p className="max-w-sm text-sm text-neutral-400">
@@ -43,11 +43,11 @@ export function AppverseFooter() {
               <li className="flex items-center gap-2">
                 <Instagram className="h-4 w-4 text-neutral-400" />
                 <a
-                  href="https://instagram.com/theskitbit"
+                  href="https://www.instagram.com/somos.ccstudio/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-lime-300"
-                  aria-label="Follow skitbit on Instagram"
+                  aria-label="Seguir a Creativity & Code en Instagram"
                 >
                   Instagram
                 </a>
@@ -55,13 +55,13 @@ export function AppverseFooter() {
               <li className="flex items-center gap-2">
                 <MessageCircle className="h-4 w-4 text-neutral-400" />
                 <a
-                  href="https://threads.com/theskitbit"
+                  href="http://wa.link/2xfv5f"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-lime-300"
-                  aria-label="Follow skitbit on Threads"
+                  aria-label="Contactça a Creativity & Code por whatsapp"
                 >
-                  Threads
+                  WhatsApp
                 </a>
               </li>
             </ul>
